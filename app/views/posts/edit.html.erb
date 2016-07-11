@@ -1,8 +1,14 @@
-<div class="table-title">
-        <h3>Editing Post</h3>
+<h2 class="centered centered-title" > EDIT A POST</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 centered-body">
+            <%= render 'form' %>
+            <br>
+            <%= link_to 'SHOW', @preference , class: "link-to-design centered", style: "text-decoration: none" %> 
+            <%= link_to 'BACK', preferences_path, class: "link-to-design centered", style: "text-decoration: none" %>
+        </div>
+    </div>
+    
 </div>
-
-<%= render 'form' %>
-
-<%= link_to '<button class="smallbutton" type="smallbutton">Show</button>'.html_safe, @post %> 
-<%= link_to '<button class="smallbutton" type="smallbutton">Back</button>'.html_safe, posts_path %>

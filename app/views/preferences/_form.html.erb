@@ -11,11 +11,16 @@
     </div>
   <% end %>
 
+
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <div class="form-group">
+      <%= f.label :Name, "NAME —" ,class: "input-title" %>
+      <%= f.text_field :name, class: "form-control form-control-style input-lg" %>
+    </div>
+
+  <br>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "UPDATE PREFERENCE", class: "btn btn-default centered " %>
   </div>
 <% end %>
